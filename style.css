@@ -1,0 +1,88 @@
+
+
+*{
+padding: 0;
+margin: 0;
+display: inline-block;
+}
+
+head{
+    display: none;
+}
+
+body{
+    height: 100vh;
+    width: 100%;
+    background: black;
+    display: inline-block;
+    text-align: center;
+    overflow: hidden;
+}
+
+.button{
+    height: 80px;
+    width: 100px;
+    margin: 50vh 0;
+    background: black;
+    align-content: center;
+    text-align: center;
+    filter: blur(0);
+    border-radius: 20px;
+   box-shadow: cyan 0 0 10px,
+   cyan 0 0 20px,
+   cyan 0 0 50px;
+   animation: neon 5s infinite;
+}
+.button p{
+    padding-top:56px ;
+    padding-left: 6;
+    height: 70px;
+    width: 90px;
+    color: rgb(40, 74, 230);
+    text-shadow: rgb(107, 40, 230) 0 0 20px ;
+    font-size: 50px;
+    transform: translate(0,-45px);
+}
+
+@keyframes neon {
+    0%{
+        box-shadow:cyan 0 0 30px, cyan 0 0 60px, cyan 0 0 70px;
+    }
+    50%{
+    box-shadow: cyan 0 0 10px,
+    cyan 0 0 20px,
+    cyan 0 0 50px;
+    }
+    100%{
+        box-shadow:cyan 0 0 30px, cyan 0 0 60px, cyan 0 0 70px;
+    }
+
+}
+@media only screen and (min-width:720px)
+ {            
+            .button{
+                height: 172px;
+                width: 289px;
+                margin: 748px 0px;
+                background: black;
+                align-content: center;
+                text-align: center;
+                filter: blur(0);
+                border-radius: 20px;
+               box-shadow: cyan 0 0 30px, cyan 0 0 60px, cyan 0 0 70px;
+               animation: neon 5s infinite;
+            }
+            .button p{
+               
+                height: 70px;
+                width: 90px;
+                color: rgb(40, 74, 230);
+                text-shadow: rgb(107 40 230) 0 0 20px;
+                font-size: 153px;
+                padding-top: 40px;
+                padding-right: 70px;
+                transform: translate(0,-45px);
+            }
+            
+         
+}

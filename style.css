@@ -1,52 +1,29 @@
-
-
 *{
 padding: 0;
 margin: 0;
 display: inline-block;
 }
 
-head{
-    display: none;
-}
-
 body{
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     background: black;
-    display: inline-block;
-    text-align: center;
     overflow: hidden;
 }
 
-.button{
-    height: 80px;
-    width: 100px;
-    margin: 50vh 0;
-    background: black;
-    align-content: center;
-    text-align: center;
-    filter: blur(0);
-    border-radius: 20px;
-   box-shadow: cyan 0 0 10px,
-   cyan 0 0 20px,
-   cyan 0 0 50px;
-   animation: neon 5s infinite;
+head{
+    display: none;
 }
-.button p{
-    padding-top:56px ;
-    padding-left: 6;
-    height: 70px;
-    width: 90px;
-    color: rgb(40, 74, 230);
-    text-shadow: rgb(107, 40, 230) 0 0 20px ;
-    font-size: 50px;
-    transform: translate(0,-45px);
+script{
+    display: none;
+}
+title{
+    display: none;
 }
 
 @keyframes neon {
     0%{
-        box-shadow:cyan 0 0 30px, cyan 0 0 60px, cyan 0 0 70px;
+        box-shadow:rgb(0, 255, 255) 0 0 30px, cyan 0 0 60px, cyan 0 0 70px;
     }
     50%{
     box-shadow: cyan 0 0 10px,
@@ -58,31 +35,60 @@ body{
     }
 
 }
-@media only screen and (min-width:720px)
- {            
-            .button{
+@media only screen and (min-width:720px) 
+{            
+
+    .button{
                 height: 172px;
                 width: 289px;
-                margin: 748px 0px;
                 background: black;
-                align-content: center;
-                text-align: center;
-                filter: blur(0);
                 border-radius: 20px;
-               box-shadow: cyan 0 0 30px, cyan 0 0 60px, cyan 0 0 70px;
-               animation: neon 5s infinite;
+                box-shadow: cyan 0 0 30px, cyan 0 0 60px, cyan 0 0 70px;
+                animation: neon 5s infinite;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
-            .button p{
-               
-                height: 70px;
-                width: 90px;
+           
+    .button a{
+                height: 100%;
+                width: 100%;
+            }
+    .button p{
+                text-align: center;
+                height: 100%;
+                width: 100%;
                 color: rgb(40, 74, 230);
                 text-shadow: rgb(107 40 230) 0 0 20px;
                 font-size: 153px;
-                padding-top: 40px;
-                padding-right: 110px;
-                transform: translate(0,-45px);
-            }
-            
-         
+            }     
+}
+
+@media only screen and (min-width:1600px) {
+    .button{
+        height: 80px;
+        width: 120px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: black;
+        border-radius: 20px;
+         box-shadow: cyan 0 0 10px,
+         cyan 0 0 20px,
+         cyan 0 0 50px;
+         animation: neon 5s infinite;
+       
+    }
+    .button p{
+        color: rgb(40, 74, 230);
+        text-shadow: rgb(107, 40, 230) 0 0 20px ;
+        font-size: 70px;
+     
+    }
+    .button a{
+        text-decoration:none;
+        color: rgb(40, 74, 230);
+    }  
 }
